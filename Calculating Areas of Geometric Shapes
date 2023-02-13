@@ -1,0 +1,51 @@
+"""
+Geometrik Şekillerin Alanlarını Hesaplama 13.02.2023
+"""
+
+"""
+kare
+dikdörtgen
+üçgen
+daire
+
+"""
+
+def kare (k):
+    print("Karenin Alanı : {} ".format(k * k))
+def dikdörtgen (k , u):
+    print("Dikdörtgenin Alanı : {}".format(k * u))
+def üçgen(y , t):
+    print("Üçgenin Alanı : {}".format(y*t/2))
+def daire (r , p):
+    print("Dairenin alanı : {}".format(r*r*p))
+
+
+secim = int(input("""
+            1 - kare
+            2 - Dikdörtgen
+            3 - Üçgen 
+            4 - Daire
+            Alanını hesaplamak istediğiniz şeklin
+            numarasını girin
+            """))
+
+if secim == 1 :
+    k = int(input("Karenin Alanı : "))
+    kare(k)
+elif secim == 2 :
+    k = int(input("Dikdörtgenin kısa kenarı : "))
+    u = int(input("Dikdörtgenin uzun kenarı : "))
+    dikdörtgen(k , u)
+elif secim == 3:
+    y = int (input("Üçgenin yüksekliği : "))
+    t = int(input("Üçgenin tabanı : "))
+    üçgen(y,t)
+elif secim == 4:
+    r = int(input("Dairenin yarı çapı : "))
+    p = int(input("Pi kaç alınsın : "))
+    daire(r,p)
+
+
+
+
+
