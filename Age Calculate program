@@ -1,1 +1,109 @@
+# Yaş Hesaplama Programı  14.02.2023 
+# Age Calculate program
+
+
+isim = input("İsminizi girin : ")
+soy = input("Soy İsminizi Girin : ")
+
+
+ay = [[0,"anan"],[1,"ocak"],[2,"şubat"],[3,"mart"],[4,"nisan"],[5,"mayıs"],[6,"haziran"],[7,"temmuz"],[8,"ağustos"],[9,"eylül"],[10,"ekim"],[11,"kasım"],[12,"aralık"]]
+
+
+dg = int(input("Doğum gününüz ayın kaçı : "))
+if (dg >= 32):
+    print("Lütfen Doğru giriniz.")
+    dg = int(input("Doğum gününüz ayın kaçı : "))
+    
+
+
+da = int(input("""Doduğunuz Ay : 
+                1 - Ocak
+                2 - Şubat 
+                3 - Mart 
+                4 - Nisan 
+                5 - Mayıs 
+                6 - Haziran 
+                7 - Temmuz
+                8 - Ağustos 
+                9 - Eylül 
+                10 - Ekim 
+                11 - Kasım
+                12 - Aralık
+                """))
+if (da >= 13):
+    print("Lütfen Doğru giriniz.")
+    da = int(input("""Doduğunuz Ay : 
+                1 - Ocak
+                2 - Şubat 
+                3 - Mart 
+                4 - Nisan 
+                5 - Mayıs 
+                6 - Haziran 
+                7 - Temmuz
+                8 - Ağustos 
+                9 - Eylül 
+                10 - Ekim 
+                11 - Kasım
+                12 - Aralık
+                """))
+    
+
+dy= int(input("Doğduğunuz yıl : "))
+if (dy <= 1923):
+    print("Lütfen Doğru giriniz.")
+    dy= int(input("Doğduğunuz yıl : "))
+
+bg = int(input("Şuan Ayın kaçı : "))
+if (bg >= 31):
+    print("Lütfen Doğru giriniz. ")
+    bg = int(input("Şuan Ayın kaçı : "))
+
+ba= int(input("""Doduğunuz Ay : 
+                1 - Ocak
+                2 - Şubat 
+                3 - Mart 
+                4 - Nisan 
+                5 - Mayıs 
+                6 - Haziran 
+                7 - Temmuz
+                8 - Ağustos 
+                9 - Eylül 
+                10 - Ekim 
+                11 - Kasım
+                12 - Aralık
+                """))
+if( ba >= 13):
+    print("Lütfen doğru giriniz.")
+    ba= int(input("""Doduğunuz Ay : 
+                1 - Ocak
+                2 - Şubat 
+                3 - Mart 
+                4 - Nisan 
+                5 - Mayıs 
+                6 - Haziran 
+                7 - Temmuz
+                8 - Ağustos 
+                9 - Eylül 
+                10 - Ekim 
+                11 - Kasım
+                12 - Aralık
+                """))
+
+by = int(input("Şuan hangi yıldasınız : "))
+if (by <=1924):
+    print("Lütfen doğru giriniz.")
+    by = int(input("Şuan hangi yıldasınız : "))
+
+sg = abs(bg - dg)
+sa = ba - da
+sy = by - dy
+
+syg = sy +1
+sag = 12 - sa
+
+print(isim , soy ," hayatta olduğun süre : ",sy , "yıl",sa , "ay",sg , "gün")
+print(syg , "Yaşına" , sag , "Ay" , sg, "Gün sonra gireceksiniz:)")
+
+
+
 
